@@ -12,7 +12,12 @@ The repository contains:
    - A e!COCKPIT program that simulates the dynamics of ship. And a visialization with simple controlls. 
    - A Docker-image containing:
       - A webserver hosting a HMI that uses OpenBridge elements. 
-      - An OPCUA-client that uses the Node-OPCUA library.  
+      - An OPCUA-client that uses the Node-OPCUA library.
+
+Programming languages:
+   - CoDeSys
+   - Javascript
+   - HTML 5
 
 # Installation
 
