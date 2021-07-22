@@ -2,10 +2,10 @@
 This repository contains a revised version and a detailed installation guide of a bachelor written for Wago Norge the spring of 2021. 
 
 Credits to the original authors:
-    - Pål Kristian Ofstad
-    - Eskil G. Gaustad
-    - Ørjan Pettersen
-    - Frode Kvalnes
+        - Pål Kristian Ofstad
+        - Eskil G. Gaustad
+        - Ørjan Pettersen
+        - Frode Kvalnes
     
 ## Info
 
