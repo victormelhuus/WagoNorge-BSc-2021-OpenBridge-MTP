@@ -22,7 +22,7 @@ Programming languages:
 # Installation
 
 ## Prerequisites
-- An SSH client
+- An SSH client (PuTTY for example)
 - Internet connection on the device
 
 
@@ -53,6 +53,8 @@ Programming languages:
 Follow this guide: https://github.com/WAGO/docker-ipk
 
 ## Installing the e!COCKPIT Program
+Download and
+
 
 ## Installing the Docker-container
 
