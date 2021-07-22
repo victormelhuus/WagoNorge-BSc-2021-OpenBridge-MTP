@@ -53,10 +53,47 @@ Programming languages:
 Follow this guide: https://github.com/WAGO/docker-ipk
 
 ## Installing the e!COCKPIT Program
-Download and
+1. Download the "OpenBridgeSimu_TP600_08072021.export"-file within the e!COCKPIT-folder.
+2. Import the .export-file to your e!c project. 
+3. Within Library Manager, make sure that these libraries are installed successfully:
+      - CmpBitmapPool
+      - Standard
+      - util
+      - VisuDialogs
+      - WagoAppBuilding
+      - WagoAppMath
+      - WagoAppRTU
+      - WagoSolMTP
+4. Rebuild, address any errors, connect and download to device once it rebuilds without errors. 
 
+## Installing and setting up the docker container (OpenBridge HMI)
 
-## Installing the Docker-container
+### Install
+Connect to the device using an SSH-client. 
+ 1. Pull and install the image from the Docker-hub.
+ ```
+ docker pull wagonorge/openbridgehmi
+ ```
+ 2. Initiate the container. 
+  ```
+ docker run -d --restart always -p 9999:9999 --name hmi wagonorge/openbridgehmi
+ ```
+### Setup
+After installing the image and initiating the container some settings will propably need to be adjustet for the OPCUA-client to communicate with OPCUA-server correctly. 
+1. access the container by running the following command
+```
+docker exec -ti hmi /bin/sh
+```
+2. Open the OPC-client Javascript file. 
+```
+vi opc.js
+```
+Usefull commands:
+ - Press "i" to edit.
+ - Press "ESC" to stop editing. 
+ - Type ":wq" to save and close. 
+ - Type ":q" to close. 
+ 
 
 # Changelog
 
