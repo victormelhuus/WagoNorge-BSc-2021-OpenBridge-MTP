@@ -118,7 +118,7 @@ docker attach hmi
 # Use
 The OpenBridge HMI is accessible through: [device-ip]:9999
 
-The visualization that lets you controll the "ship" is accissible through [device-ip]/webvisu
+The visualization that lets you controll the "ship" is accissible through: [device-ip]/webvisu
 
 
 # Changelog
