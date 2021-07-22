@@ -94,8 +94,42 @@ Usefull commands:
  - Type ":wq" to save and close. 
  - Type ":q" to close. 
  
+3. Make sure "endpointUrl" matches the URL of the OPCUA-server. E.g.: 
+```
+var endpointUrl = "opc.tcp://192.168.10.17:4840";
+```
+4. Make sure "opcuaAppID" matches the OPCUA Ctr Configuration Name (found in the application's Web Based Managment. Fieldbus -> OPCUA -> Configuration). E.g.:
+```
+var opcuaAppID = "WAGO OPCUA TP600";
+```
+5. Save and close the file. 
+6. Exit the docker container
+```
+return
+```
+7. Restart the container
+```
+docker restart hmi
+```
+8. Verify that it runs correctly by reading the log or observing the OpenBridge HMI. 
+```
+docker attach hmi
+```
+# Use
+The OpenBridge HMI is accessible through: [device-ip]:9999
+
+The visualization that lets you controll the "ship" is accissible through [device-ip]/webvisu
+
 
 # Changelog
 
 ## 07.2021
+### PLC: Changes from the original bachelor program
+- Controller changed to TP600
+- Minor/major bug-fixes throughout. 
+- Increased rate of calculations.
+- New WebVisu for controlling the simulated ship, as analog input has bin removed for use with the TP600.
+- Improved ship simulation.
+- A P-regulated Autopilot and simple azimuth controll. 
+
 
