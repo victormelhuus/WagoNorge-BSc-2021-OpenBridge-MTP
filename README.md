@@ -40,13 +40,17 @@ Programming languages:
 5. ... -> Browser Settings -> Favourites 
       - Ad the HMI webserver: http://localhost:9999
 6. Fieldbus -> OPCUA -> Configuration
-      -
+      - Service Enabled: yes
+      - Ctrl Configuration name (e.g.): WAGO OPCUA TP600.
+      - Unlimited Anonynous Access: yes
+      - Security Policy - None: yes
+      - Trust all clients: yes
 
 
 
+### Installing docker (required)
 
-### Installing docker
-
+Follow this guide: https://github.com/WAGO/docker-ipk
 
 ## Installing the e!COCKPIT Program
 
