@@ -21,11 +21,29 @@ Programming languages:
 
 # Installation
 
+## Prerequisites
+- An SSH client
+- Internet connection on the device
 
 
 ## Setup in Web Based Management
-
 ### Settings
+1. Configuration -> Networking -> TCP/IP Cofiguration
+      - IP Source: Static IP
+      - Set an IP address and Subnet Mask that is accessible and corresponds with the local network router. 
+      - Manually assign a DNS server. e.g: 8.8.8.8 
+2. ... -> ... -> Routing
+      - IP Forwarding through multiple interfaces: Enabled
+      - Default Static Routes. Set it up with the router. 
+3. ... -> PLC runtine. PLC Runtime Version: e!RUNTIME. 
+4. ... -> Ports and Services -> PLC Runtime Services. e!RUNTIME: Webserver Enabled. 
+5. ... -> Browser Settings -> Favourites 
+      - Ad the HMI webserver: http://localhost:9999
+6. Fieldbus -> OPCUA -> Configuration
+      -
+
+
+
 
 ### Installing docker
 
