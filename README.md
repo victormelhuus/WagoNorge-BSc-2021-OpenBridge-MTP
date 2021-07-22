@@ -123,13 +123,15 @@ The visualization that lets you controll the "ship" is accissible through: [devi
 
 # Changelog
 
-## 07.2021
-### PLC: Changes from the original bachelor program
+## 08.07.2021: Changes from the original bachelor program
+### e!Cockpit program: 
 - Controller changed to TP600
 - Minor/major bug-fixes throughout. 
 - Increased rate of calculations.
 - New WebVisu for controlling the simulated ship, as analog input has bin removed for use with the TP600.
 - Improved ship simulation.
 - A P-regulated Autopilot and simple azimuth controll. 
-
+### OPC-client (opc.js)
+- Added a variable for Ctrl Configuration name, so it only has to be changed one place in the code. 
+- Configured for TP 600 panel with IP 192.168.10.17
 
