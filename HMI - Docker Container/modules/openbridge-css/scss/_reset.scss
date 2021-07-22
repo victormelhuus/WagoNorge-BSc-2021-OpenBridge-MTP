@@ -1,0 +1,11 @@
+/**
+  This file resets default behavior in browsers.
+ */
+
+:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
